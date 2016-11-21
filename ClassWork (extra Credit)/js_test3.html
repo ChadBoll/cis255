@@ -1,0 +1,64 @@
+<html>
+	<body>
+	
+	
+		<script>
+			/* for loop
+			//while loop
+			//do loop
+			
+			//for
+			var days = ["sunday", "monday", "tuesday", "Wednsday", "thursday", "friday", "saturday"];
+			var text = "";
+			var i;
+			for (i = 0; i < days.length; i++) {
+				text += days[i] + "<br>";
+				
+			}
+				document.write(text + "<br>");
+				
+			//while loop
+			var a = 0;
+			var text2 = "";
+			while (a < 10) {
+				text2 += a;
+				a++;
+				}
+			document.write(text2 + "<br>");
+			*/
+			
+			// hello world 10 times
+			document.write("Hello World 10 Times <br /> ");
+			for (var i = 0; i <= 10; i++) 
+			{
+			    document.write("hello, world<br />");
+			}
+			
+			
+			//adding the sum 123456789
+			var x = 1234567890;
+			var sum = 0;
+			
+			while(x>0 )
+			{
+			sum += (x%10);
+			x = (Math.floor(x / 10));
+			document.write(sum+ "<br />");
+			}
+			
+			
+			
+			//do while loop
+			var word = "zippy";
+			var y = 0;
+
+			do 
+			{
+			document.write(word.substring(y,y+1)+ "<br />");
+			y++;
+			}	 while(word.length > y);
+		
+		
+		</script>
+	</body>
+</html>

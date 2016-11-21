@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+	<body>
+		<label>Enter a number</label>
+		<input type="text" id="in01" onkeyup="myArrayFun();"/>
+		
+		<p id="out01">Output goes here</p>
+		
+		<script>
+			var a = new Array("1",2,"three");
+			var b = ["1", 2, "three"];
+		    b[3] = 17
+			
+			function myArrayFun(){
+				var elem = document.getElementById("out01");
+				var s = 0;
+				while(s < 10) a[s] = s++;
+				//print backwards
+					for (s = a.length - 1; s >= 0; s--){
+						
+					}
+				
+				// 2 extra credit points create an array that contins 5 functions. add2() 
+				// subtract4(), mod5(), power3(), .toString()
+				// write a function to loop through the array fo functions and append text nodes to the
+				// to a paragraph <p> in the dDOM which contains the output of a parameter
+			}
+		
+		</script>
+	</body>
+</head>

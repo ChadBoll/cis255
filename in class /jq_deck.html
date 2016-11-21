@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+
+				$("#length, #width").keyup(function(){
+					bL = $("#bLength").val();
+					bW = $("#bWidth").val();
+					L = $("#length").val();
+					W = $("#width").val();
+					area = L*W;
+					BArea = bL*bW;
+					boards = area / BArea;
+					document.getElementById("numofboards").innerHTML = boards;
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Calculate materials for deck</h1>
+		
+		<form>
+			board length<input type="text" id="bLength"/><br>
+			board width <input type="text" id="bWidth"/><br>
+			deck length<input type="text" id="length"/><br>
+			deck width <input type="text" id="width"/><br>
+			you need <span id = "numofboards"> ___ </span> board(s).
+		</form>
+		
+
+	</body>
+</html>

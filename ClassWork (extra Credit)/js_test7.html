@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+	<body>
+		<label>Enter a number</label>
+		<input type="text" id="in01" onkeyup="isNumber();"/>
+		
+		<p id="out01">Output goes here</p>
+		
+		<script>
+		
+		function isNumber(){
+			var x = document.getElementById("in01").value;
+			
+			if(!isNaN(x))
+			document.getElementById("out01").innerHTML = "Number";
+			else
+			document.getElementById("out01").innerHTML = "not a Number";
+		}
+		
+		
+		
+		</script>
+	</body>
+</head>

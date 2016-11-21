@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<body>
+		<script>
+		
+		
+		var one;
+		(function() {
+			var two = 2, one = "uno";
+				console.log(two); //2
+				console.log(one); //"uno"
+				console.log(three); //error
+				three = "tres"; // declared globally because var wasnt put in front of it
+				
+		))();
+		
+		console.log(one); // undefined
+		console.log(two); // undefined
+		console.log(three); // should output "tres"
+		
+		
+		//nested scope
+		
+		
+		function red () {
+			var result = " ";
+			
+			//functions declared inside another function
+			
+			var magenta = function(length){
+				result = "";
+				for (var i = 0; i < length; i++){
+				result = result + "m";
+				};
+			};
+			var burgandy = function(length){
+				result += "/";
+				for (var i = 0; i < length; i++){
+				result = result + "b";
+				};
+			};
+			
+			magenta(5);
+			burgandy(10);
+			magenta(5);
+			burgandy(10);
+			return result;
+			
+		}
+		
+		console.log(red());
+		
+		<script/>
+	<body/>
+<html/>

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+	</head>
+	
+	
+	<body>
+	
+		<p id ="js12">Hello</p>
+		
+		
+		
+		<script>
+			document.write("Goodbye");
+			var obj = document.getElementById("js12");
+			obj.innerHTML = ("so long");
+			
+			obj.setAttribute("style","color: red");
+			obj.setAttribute("onclick","alert('hey!')");
+			obj2 = document.createElement("hr");
+			obj.appendChild(obj2);
+			var b = document.getElementsByTagName("body");
+			ul = document.createElement("ul");
+			b.appendChild(ul);
+			var li1 = document.createElement("li");
+			var li2 = document.createElement("li");
+			var li3 = document.createElement("li");
+			var li4 = document.createElement("li");
+			var li5 = document.createElement("li");
+			var li6 = document.createElement("li");
+			li1.innerHTML = "Blue";
+			ul.appendChild(li1);
+			
+			//add an ordered list 5 li items (li)to the body
+			//ant bat cat dog elephant
+			
+			
+			var ant = document.createElement("ol");
+			var bat = document.createElement("ol");
+			var cat = document.createElement("ol");
+			var dog = document.createElement("ol");
+			var frog = document.createElement("ol");
+			ant.innerHTML = "ant";
+			bat.innerHTML = "bat";
+			cat.innerHTML = "cat";
+			dog.innerHTML = "dog";
+			frog.innerHTML = "frog";
+			
+			b.appendChild(ant);
+			b.appendChild(bat);
+			b.appendChild(cat);
+			b.appendChild(dog);
+			b.appendChild(frog);
+			
+			
+			
+			
+		
+		</script>
+	</body>
+</html>
